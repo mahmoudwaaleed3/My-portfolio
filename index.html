@@ -28,7 +28,11 @@
             <nav class="container">
                 <a href="#" class="logo"><img src="img/logo.png" alt=""></a>
 
-                <div class="links">
+                <div class="links" id="links">
+                    <span class="close_menu" onclick="Open_colose_Menu()"><i class="fa-solid fa-xmark"></i></span>
+
+
+                    <a href="#" class="logo"><img src="img/logo.png" alt=""></a>
                     <a class="active" href="#">Home</a>
                     <a href="">About</a>
                     <a href="">Service</a>
@@ -37,9 +41,11 @@
                 </div>
 
                 <div class="icons">
-                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=100009264927742&locale=ar_AR" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://x.com/mahmoudwal33187" target="_blank"><i class="fa-brands fa-x-twitter" ></i></a>
+                    <a href="https://www.instagram.com/mahmoud.waleedo_o/?hl=ar" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <span class="icon_menu" onclick="Open_colose_Menu()"><i class="fa-solid fa-bars"></i></span>
+                   
                 </div>
             </nav>
     </header>
@@ -55,7 +61,7 @@
 
                     <div class="btns">
                         <a href="#" class="btn">hire me</a>
-                        <a href="#" class="btn_no_bg">Download Resume</a>
+                        <a href="img/pdf.pdf" class="btn_no_bg" download="">Download Resume</a>
                     </div>
             </div>
 
@@ -245,17 +251,17 @@
         </div>
 
 
-        <form action="">
+        <form method="post" action="https://api.sheetmonkey.io/form/atna6Y6j5C6QRsPE4xwW64">
             <div class="inpts_form">
-                <input type="text" placeholder="Full Name">
-                <input type="text" placeholder="Email">
-                <input type="text" placeholder="Mobile Number">
-                <input type="text" placeholder="Subject">
+                <input type="text" placeholder="Full Name" name="Name" required>
+                <input type="text" placeholder="Email" name="Email" required>
+                <input type="text" placeholder="Mobile Number" name="phone" required>
+                <input type="text" placeholder="Subject" name="Subject">
 
-                    <textarea name="" id="" rows="10" placeholder="Youe Message Here ..."></textarea>
+                    <textarea name="Message" id="" rows="10" placeholder="Youe Message Here ..."></textarea>
             </div>
 
-            <button class="btn">Send Message</button>
+            <button type="submit" class="btn">Send Message</button>
        </form>
     </div>
 
